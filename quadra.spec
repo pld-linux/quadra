@@ -6,7 +6,7 @@ Summary:	Multiplayer puzzle game
 Summary(pl):	Gra logiczna dla wielu graczy
 Name:		quadra
 Version:	1.1.8
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
@@ -71,11 +71,11 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Games}
+install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 
 %{__make} install DESTDIR="$RPM_BUILD_ROOT"
 install images/quadra.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -86,7 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/games/quadra.res
 %{_pixmapsdir}/*
-%{_applnkdir}/Games/*
+%{_desktopdir}/*
 
 %if %{with svga}
 %files svga
