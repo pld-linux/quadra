@@ -21,7 +21,6 @@ BuildRequires:	svgalib-devel
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 Quadra is a full-featured multiplayer action puzzle game for the X
