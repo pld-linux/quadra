@@ -8,13 +8,16 @@ Group:		X11/Applications/Games
 Source0:	http://download.sourceforge.net/quadra/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	http://www.gamesdomain.com/faqdir/%{name}.txt
+Patch0:		%{name}-DESTDIR.patch
 Icon:		quadra.xpm
 URL:		http://quadra.Sourceforge.net/
 Requires:	/bin/awk
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	libpng-devel
+%ifarch %{ix86} alpha
 BuildRequires:	svgalib-devel
+%endif
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -52,6 +55,7 @@ Driver svgalib dla gry quadra
 
 %prep
 %setup -q
+%patch0
 
 %build
 rm -f missing
@@ -69,8 +73,6 @@ install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Games}
 install images/quadra.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
 
-gzip -9nf NEWS README quadra.txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -78,10 +80,12 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc NEWS README quadra.txt
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/misc/quadra.res
+%{_datadir}/games/quadra.res
 %{_pixmapsdir}/*
 %{_applnkdir}/Games/*
 
+%ifarch %{ix86} alpha
 %files svga
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/quadra-svga.so
+%endif
