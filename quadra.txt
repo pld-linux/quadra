@@ -1,0 +1,900 @@
+<html>
+<head>
+<!-- Advert insertion code by johnc@gamesdomain.com -->
+<title>http://www.gamesdomain.com/faqdir/quadra.txt</title>
+</head>
+<body>
+<Script language="JavaScript">
+<!--
+document.write("<table  width='600' cellpadding='4' cellspacing='0' border='0'>");
+document.write("<tr><td width='126' valign=top>");
+var h="";
+var d="";
+var g="";
+r=Math.round((99999-10000)*Math.random()+10000);
+h=window.location.hostname;
+h=h.substring((h.length-2),h.length);
+function s(h,d,r){
+document.write("<A href='http://adengine.theglobe.com/cgi-bin/accipiter/adclick.exe/SITE=" + g + "/AAMSZ=120x60/?" + r + "'  target='ad_window'>");
+document.write("<img src='http://adengine.theglobe.com/cgi-bin/accipiter/adserver.exe/SITE=" + g + "/AAMSZ=120x60/?" + r + "' border='0' width='120' height='60'>");
+document.write("</A>");document.write("</td><td width=474 valign=top>");}
+if ((h=="uk") || (h=="ie")) {
+h="ad.uk.doubleclick.net";d="gamesdomain-uk";g="GAMESDOMAIN.CO.UK";
+}else{
+h="ad.doubleclick.net";d="gamesdomain";g="GAMESDOMAIN.COM"
+}
+s(h,d,r);
+if (document.layers) {
+document.write("<ILAYER id='ph1' visibility='hide'");document.write("height='80' width='468'></ILAYER>");
+}else{
+document.write("<IFRAME SRC='http://" + h + "/adi/" + d + ".webgenesis/frontpage;sz=468x60;ord=" + r + "' width='468'  height='80' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no'>");
+document.write("<A href='http://" + h + "/jump/" + d + ".webgenesis/frontpage;sz=468x60;ord=" + r + "'  target='ad_window'>");
+document.write("<img src='http://" + h + "/ad/" + d + ".webgenesis/frontpage;sz=468x60;ord=" + r + "' border='0'>");
+document.write("</A></IFRAME>");}
+//-->
+</script>
+</td></tr></table>
+<pre>
+			QUADRA FAQ/Guide File
+
+Version:        1.0.1 (First Public Release)
+Author:         DAC (aka ComDAC) 
+Email:          comdac@hotmail.com
+Web:            www.quadraplayers.cjb.net
+Last Changed:   11/10/99 - 18:44:54     
+This document is (C) 1999 DAC.     
+ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+|__    __|   __|  |__   |__ __   |     |   __ __|  |     |__|  |__|
+|  |__|__ __|__ __ __|__ __|  |__|__ __|__|__ __ __|__ __|__ __ __|
+|__   |     |  |            CONTENTS            |  |__|__   |__   |
+|  |__|__ __|  |__Q__U__A__D__R__A__ __F__A__Q__|__ __ __|__ __|  |
+|__ __ __|__ __|__ __ __ __|__ __ __ __|__ __ __ __|__ __ __ __|__|
+
+[1]	Introduction
+	[1-1] Copyright
+	[1-2] Disclaimer
+[2]   Quadra Basics
+	[2-1] What is Quadra?
+	[2-2] Controls
+	[2-3] The Pieces
+	[2-4] What to do with the pieces.
+[3]	Single Player
+	[3-1] The aim of the game
+	[3-2] How the scoring works
+	[3-3] Eh? How do you clear so many lines at once?
+	[3-4] How do you get really good high scores?
+[4]	Multiplayer
+	[4-1] The different Multiplayer Games
+	[4-2] How multiplayer games work
+	[4-3] Create Game options
+	[4-4] The user interface and its options
+	[4-5] Pausing Multiplayer Games
+	[4-6] Multiplayer Game Recordings
+	[4-7] Multiplayer Tips
+	[4-8] Frag - How is it defined?
+[5]	Options Menu
+[6]	Player Setup Menu
+[7]	Demo Central
+[8]	Highscores
+[9]   QUADRA PLAYING TIPS!!!
+[10]  Closing FAQ info
+	[10-1] Document History/Updates
+	[10-2] Credits
+
+ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+|__    __|   __|  |__   |__ __   |     |   __ __|  |     |__|  |__|
+|  |__|__ __|__ __ __|__ __|  |__|__ __|__|__ __ __|__ __|__ __ __|
+|__   |     |  | [1] Introduction               |  |__|__   |__   |
+|  |__|__ __|  |__Q__U__A__D__R__A__ __F__A__Q__|__ __ __|__ __|  |
+|__ __ __|__ __|__ __ __ __|__ __ __ __|__ __ __ __|__ __ __ __|__|
+
+
+
+This document is intented to help people play Quadra.
+
+This is my first FAQ file and I made it to inform the public about
+the game 'Quadra' by LudusDesign. Send all comments, questions, 
+suggestions, complaints, praises, and anything else to:
+comdac@hotmail.cjb.net
+
+And don't forget to check out the number 1 place on the net for
+Quadra Players:
+
+	http://www.quadraplayers.cjb.net 
+	
+	Quadra Players - "We do great Quadra Stuff for you!"
+	
+	Oh, If you want to show off how much you like Quadra and the
+	quadraplayers web site, you can have a totally free email mask.
+	Thats right get "yournamehere@quadraplayers.cjb.net" which will
+	redirect all email sent to that address to your normal email
+	address. Its totally free so just email me (comdac@hotmail.com)
+	and I will make it for you!
+
+---------------
+[1-1] Copyright
+---------------
+
+This document is (C) 1999 DAC
+You may distribute this Document as long as the following conditions
+are met:
+1. You do not sell it
+2. You do not edit anypart of it
+3. You contact the author (DAC) and ask for permission
+4. You distribute the latest version of this Document
+5. The file are in electronics format only and not on CD
+
+Quadra is a trade mark of Ludus Design, (C) 1998-1999 Ludus Design.
+Ludus Design's Web Site is http://www.ludusdesign.com
+
+----------------
+[1-2] Disclaimer
+----------------
+
+Although care has been taken in writing this Document, the author
+(DAC) can not be help response for anything which arises from using
+the information contained in this document. The information in this
+document is at this time unofficiail, and all questions/replies
+reguarding this FAQ shoud be sent to: dac@quadraplayers.cjb.net.
+The information in this document may not be correct and may contain
+errors and/or omissions, though I did try my best =)
+
+
+ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+|__    __|   __|  |__   |__ __   |     |   __ __|  |     |__|  |__|
+|  |__|__ __|__ __ __|__ __|  |__|__ __|__|__ __ __|__ __|__ __ __|
+|__   |     |  | [2] Quadra Basics              |  |__|__   |__   |
+|  |__|__ __|  |__Q__U__A__D__R__A__ __F__A__Q__|__ __ __|__ __|  |
+|__ __ __|__ __|__ __ __ __|__ __ __ __|__ __ __ __|__ __ __ __|__|
+
+---------------------
+[2-1] What is Quadra?
+---------------------
+
+Quadra is a great puzzle game by. Quadra is like Tetris but features
+ a kind of "gravity" so loose blocks fall down until they get stuck.
+This enables you to clear massive amouts of lines at once, infact if
+you built up the blocks correctly, you could use 1 piece to take out
+15 or even more lines! Quadra is a fast, fun and very addictive game
+which comes with full internet support! You can download Quadra for a
+totally free 1 month trial from. And after you try it for a whole
+month you can register your version for just $10, what a bargain!
+
+Quadra Features:
+
+Windows and Linux versions.
+Totally Free multiplayer internet play that is very lag free!
+TCP/IP Support for LAN games.
+Excellent user interface.
+Multiplayer Chat.
+Multiplayer Watch modes.
+CD music player.
+10 different sound and graphic schemes for the different levels.
+Shadows of blocks to help you place the blocks easily.
+Slow, Normal, Fast and Faster modes to control the blocks at your
+speed.
+Smooth clean graphics.
+Local multiplayer game of upto 3 players!
+Internet game supports 8 players and many watching players, as well
+as up to 3 players per computer.
+A very cheap price tag of just $10  =)
+Recording games, allowing you to record and later play back you best 
+single player and multiplayer games.
+A top 100 internet listing which you can add you name to 
+automatically if you get a top score! (this is really cool!)
+Fully customisable multiplayer modes with teams and different winning 
+conditions.
+Fully customisable controls with rotate left AND rotate right 
+buttons.
+Extra Qsnoop taskbar program which lists current internet games.
+And it also features really fast levels that'll have those blocks 
+flying down on you and driving you crazy!
+
+--------------
+[2-2] Controls
+--------------
+
+The default controls are as follows:
+
+Left arrow			Move block peice left
+Right arrow			Move block peice right
+Down arrow			Force block peice down
+Ctrl button			Rotate block left
+Alt button			Rotate block right
+
+----------------
+[2-3] The Pieces
+----------------
+
+The blocks are formed from the 7 different ways of arranging 4
+squares together:
+ __
+|__|
+|__| The Straigt piece. Green in color.
+|__|
+|__|
+
+ __
+|__|
+|__|__   The 'L' piece. Purple in color.
+|__|__|
+
+    __
+   |__|
+ __|__|  The 'J' piece. Yellow in color.
+|__|__|
+
+ __ __ __
+|__|__|__| The 'T' piece. Blue in color.
+   |__|
+
+    __ __
+ __|__|__| The 'S' piece. Cyan in color.
+|__|__|
+
+ __ __
+|__|__|__  The 'Z' piece. Red in color.
+   |__|__|
+
+ __ __
+|__|__|  The Square piece. Orange in color.
+|__|__|
+
+
+---------------------------------
+[2-4] What to do with the pieces.
+---------------------------------
+
+Each piece will fall from the top of the screen into a section
+sometimes called the 'well' or build area. Here as the peice falls
+down you can move it into varios positions and spin it around. Once
+the peice hits the bottom is gets stuck.
+
+ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+|__    __|   __|  |__   |__ __   |     |   __ __|  |     |__|  |__|
+|  |__|__ __|__ __ __|__ __|  |__|__ __|__|__ __ __|__ __|__ __ __|
+|__   |     |  | [3] Single Player Game         |  |__|__   |__   |
+|  |__|__ __|  |__Q__U__A__D__R__A__ __F__A__Q__|__ __ __|__ __|  |
+|__ __ __|__ __|__ __ __ __|__ __ __ __|__ __ __ __|__ __ __ __|__|
+
+-------------------------
+[3-1] The aim of the game
+-------------------------
+
+The aim of the game is to achieve the most points. The number of
+points given out depends on a number of factors including:
+1)number of lines cleared with your last block
+2)how many recursions were needed until everything settled into place
+3)level number you have reached
+
+
+How do you clear lines you ask? Well assume a setup like below
+consisting of 4 straight peices:
+        
+#                               #
+#                               #
+# __ __ __ __ __ __ __ __       #
+#|__ __ __ __|__ __ __ __|__    #
+#   |__ __ __ __|__ __ __ __|   #
+#################################
+
+Now the player drops a J piece into the positions shown:
+
+#                            __ #
+#                           |  |#
+# __ __ __ __ __ __ __ __ __|  |#
+#|__ __ __ __|__ __ __ __|__ __|#
+#   |__ __ __ __|__ __ __ __|   #
+#################################
+
+This will cause the whole 2nd line to vanish:
+
+#                            __ #
+#                           |  |#
+#                           |__|#
+#    __ __ __ __ __ __ __ __    #
+#   |__ __ __ __|__ __ __ __|   #
+#################################
+
+
+The rest of the J block will now fall down:
+
+#                               #
+#                               #
+#                            __ #
+#    __ __ __ __ __ __ __ __|  |#
+#   |__ __ __ __|__ __ __ __|__|#
+#################################
+
+See how the rest of the J blocked fell down 2 rows? That is because
+it was free to do so. In Tetris the remaining section of the J block
+would have only fell down 1 row.
+
+
+---------------------------
+[3-2] How the scoring works
+---------------------------
+
+Here is the coding from the game itself (thanks to Dada for sending
+me it!) :
+
+switch(depth) {
+    case 0: return;    case 1: score_add = 250; break;
+    case 2: score_add = 500; break;    case 3: score_add = 1000; 
+break;
+    case 4: score_add = 2000; break;
+    default: score_add = 200 * depth * depth; break;  }
+  score_add += 1000*(complexity-1);  score_add += (score_add/10)*level;
+  stats[SCORE].add(score_add);
+where depth =(number of lines cleared with your last block)
+complexity =(how many recursions were needed until everything 
+settled into place)
+level =(level number you have reached) (note that Quadra always give 
+bonus points for the level, even at level 1 so you will never see 
+250 points for a single, the minimum is 275)
+
+So if you can follow that good! If not here is a list of scores for
+level 1 going up to a depth of 10 with all different complexity
+levels:
+
+
+SCORE		DEPTH		LEVEL		COMPLEXITY		
+275		1		1		1
+550		2		1		1
+1550		2		1		2
+1100		3		1		1
+2100		3		1		2
+3100		3		1		3
+2200		4		1		1
+3200		4		1		2
+4200		4		1		3
+5200		4		1		4
+5500		5		1		1
+6500		5		1		2
+7500		5		1		3
+8500		5		1		4
+9500		5		1		5
+7920		6		1		1
+8920		6		1		2
+9920		6		1		3
+10920		6		1		4
+11920		6		1		5
+12920		6		1		6
+10780		7		1		1
+11780		7		1		2
+12780		7		1		3
+13780		7		1		4
+14780		7		1		5
+15780		7		1		6
+16780		7		1		7
+14080		8		1		1
+15080		8		1		2
+16080		8		1		3
+17080		8		1		4
+18080		8		1		5
+19080		8		1		6
+20080		8		1		7
+21080		8		1		8
+17820		9		1		1
+18820		9		1		2
+19820		9		1		3
+20820		9		1		4
+21820		9		1		5
+22820		9		1		6
+23820		9		1		7
+24820		9		1		8
+25820		9		1		9
+22000		10		1		1
+23000		10		1		2
+24000		10		1		3
+25000		10		1		4
+26000		10		1		5
+27000		10		1		6
+28000		10		1		7
+29000		10		1		8
+30000		10		1		9
+31000		10		1		10
+
+-------------------------------------------------
+[3-3] Eh? How do you clear so many lines at once?
+-------------------------------------------------
+
+The best why to learn how to play single player games well is to
+watch the world top score replays. See the replay section for how 
+to do this. But I will dmonstrate how to clear 11 lines at once:
+
+
+You could build up the blocks like so:
+
+# __                            #
+#|  |                           #
+#|  |                           #
+#|  |                           #
+#|__|                           #
+#|  |                           #
+#|  |                           #
+#|  |                           #
+#|__|                           #
+#|  |                           #
+#|  |__ __ __ __ __ __ __       #
+#|__ __|                 |      #
+#   |                    |__ __ #
+#   |                          |#
+#   |                          |#
+#   |                          |#
+#   |                          |#
+#   |                          |#
+#   |     (lots of blocks      |#
+#   |     arranged in this     |#
+#   |     section)             |#
+#   |                          |#
+#   |__ __ __ __ __ __ __ __ __|#
+#################################
+
+
+Now a Square peice is added which completes a line.
+
+# __                            #
+#|  |                           #
+#|  |                           #
+#|  |                           #
+#|__|                           #
+#|  |                           #
+#|  |                           #
+#|  |                           #
+#|__|                           #
+#|  |                           #
+#|  |__ __ __ __ __ __ __ __ __ #
+#|__ __|                 |     |#
+#   |                    |__ __|#
+#   |                          |#
+#   |                          |#
+#   |                          |#
+#   |                          |#
+#   |                          |#
+#   |     (lots of blocks      |#
+#   |     arranged in this     |#
+#   |     section)             |#
+#   |                          |#
+#   |__ __ __ __ __ __ __ __ __|#
+#################################
+
+
+The line is cleared and the stacked straigt pieces fall into the
+'Hole'
+
+#    __ __ __ __ __ __ __ __ __ #
+# __|                          |#
+#|  |                          |#
+#|__|                          |#
+#|  |                          |#
+#|  |                          |#
+#|  |                          |#
+#|__|     (lots of blocks      |#
+#|  |     arranged in this     |#
+#|  |     section)             |#
+#|  |                          |#
+#|__|__ __ __ __ __ __ __ __ __|#
+#################################
+
+Now another 10 lines are completed, making a total of 11 lines
+completed by droping just 1 peice in! This leaves:
+
+#    __ __ __ __ __ __ __ __ __ #
+#   |__ __ __ __ __ __ __ __ __|#
+#################################
+
+Doing this kind of move is usually called a 'Build up' as you build
+up all the blocks then remove heaps of 'em at once.
+
+---------------------------------------------
+[3-4] How do you get really good high scores?
+---------------------------------------------
+
+As a beginner you should try to do build ups on the early levels, and
+then concentrate on staying alive once you get to the higher levels.
+But once you get more experienced you should find that you will be
+able to do big build ups on higher levels where the blocks fall
+faster. Learning how to use the left rotate and the right rotate
+buttons is also very important and will help you place the blocks in
+the right positions on the faster levels.
+
+ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+|__    __|   __|  |__   |__ __   |     |   __ __|  |     |__|  |__|
+|  |__|__ __|__ __ __|__ __|  |__|__ __|__|__ __ __|__ __|__ __ __|
+|__   |     |  | [4] Multiplayer                |  |__|__   |__   |
+|  |__|__ __|  |__Q__U__A__D__R__A__ __F__A__Q__|__ __ __|__ __|  |
+|__ __ __|__ __|__ __ __ __|__ __ __ __|__ __ __ __|__ __ __ __|__|
+
+-------------------------------------
+[4-1] The different Multiplayer Games
+-------------------------------------
+
+There are 3 different multiplayer games which you can play.
+1 - Local Game (no network) - All players are using just your 1 
+	computer allowing a maxiumum of 3 players.
+2 - TCP/IP Local Network (lan) - This is for multiplayer games over
+	networked computers which are using TCP/IP
+3 - TCP/IP Internet - This is for playing internet games against 
+	people from all over the world!
+
+--------------------------------
+[4-2] How multiplayer games work
+--------------------------------
+
+In multiplayer games players join 1 of 7 different teams. The teams
+are:
+Red, Blue, Green, Cyan, Orange, Yellow and Purple.
+
+When a member of a team clears multiple lines at once lets say 4 
+lines, then 3 lines are 'dumped' onto all of the players in all of
+the other teams. 'Dumped' lines are lines which are missing one
+piece and they stack up from the bottom of the other players screens.
+Some times the host of the multiplayer game sets what is called a
+smallest offensive line combo. This is a preset number set by the
+host of the multiplayer such that you can only send lines if you
+equal of exceed that number. For example if it is set to 5, then the
+minamum number of lines you can dump on your opponent is 4 by
+clearing 5 lines.
+
+When you dump (or send as it is also called) lines on other players,
+sometimes you will get a frag when the other player dies. Getting
+a frag is a good thing, being fragged is not. See section 4-8 for
+more information about frags.
+
+-------------------------
+[4-3] Create Game options
+-------------------------
+
+When you create a new multiplayer game you can pick a number of 
+options. These are:
+
+Game Type:
+	Free for All
+		- Frag your opponents and respawn when you die.
+	Survivor Mode
+		- The last team alive wins them everybody respawn.
+
+Level Up:
+	After 15 lines
+		- Players will goto the next level after every 15 lines
+		  that they clear.
+	Disabled
+		- No possible way to change the level.
+
+Start game at level:
+	Start on which even level you want (1 to 9 only), starting on
+	level 9 can be fun =)
+
+Smallest Offensive Line Combo:
+	Smallest amount of lines players can send.
+
+The game ends when:
+	Frags 
+		- Game ends when any player reaches the set amount of
+		  frags.
+	Time
+		- Game ends after the set amount of time.
+	Never
+		- Never ending game (most internet game are like this)
+
+Record game:
+	Allows you to record the multiplayer game to a .rec file.
+	See the recording section for more info.
+	Note: You can NOT record local player no network games.
+
+----------------------------------------
+[4-4] The user interface and its options
+----------------------------------------
+
+At first you may find the user interface a bit wierd. But actually
+its really good. Just aviod pressing esc when you make the wrong
+selection as this exits the whole multiplayer game, instead click on
+the 'close' button. The interface is made up of 3 windows.
+Each window has these options available:
+
+Start &lt;player name&gt; - Start playing with this player setup
+Start &lt;player name 2&gt; - Start playing with this player setup 
+Start &lt;player name 3&gt; - Start playing with this player setup
+
+Show Players - This show a list of all the current players in the
+	game. You can click on a player and choose view player to
+	watch them play. You can watch up to 4 people in a single
+	window.
+Block Info - Displays the block info for 2 players at a time. Click
+	on the players names to change from player to player.
+Lines Info - Same as block info but shows lines information.
+Select Scheme - Allows you to select which scheme you want to play
+	in (the background wallpaper and sounds) 
+Chat Window - This is where you chat to the othe players.
+
+Network Tools - This is an extra option which only appears for the
+	host (the creator) of the game. It allows the host to drop
+	players and connections. You can also set if you want to allow
+	players and connections to join and you can test the pings to
+	the players here as well. You can also view some IP info.
+
+-------------------------------
+[4-5] Pausing Multiplayer Games
+-------------------------------
+
+Pausing is done with the 'Pause/Break' key usually found at the top
+right of your keyboard.
+Any player can pause a multiplayer game. The only players able to
+unpause the game are the player the paused the game and the host.
+
+---------------------------------
+[4-6] Multiplayer Game Recordings
+---------------------------------
+
+Only the host can record a multiplayer game. So if you are joining
+the multiplayer game, you can not record it.
+
+Also, you can not record local no network games. Only TCP/IP LAN and
+internet game can be recorded.
+
+See the Demo Central section for information on replaying multiplayer
+recordings.
+
+----------------------
+[4-7] Multiplayer Tips
+----------------------
+
+Multiplayer games are all about being fast, very fast. To be real
+good at multiplayer game practice playing really fast and try and
+send lines when ever you can. If there are more than 3 or 4 players
+in the game, you should not try a big build up (unless your sure you
+can pull it off) because you will get lines dumped on you making you
+no longer able to pull of the build up. Another tip is when you have
+a build up, dont use it until another player is nearly dead, as when
+you send the lines you will kill the other player and get a frag for
+it.
+
+-------------------------------
+[4-8] Frag - How is it defined?
+-------------------------------
+
+I could not fiqure it out myself how a frag worked, but Dada was kind
+enough to give me some info about how Quadra defines a frag:
+
+For every line you send to somebody (let's call him Bob), 2 attack
+points are counted. Those attack points are cumulative so if you send
+3 lines (6 points) and a little while after you send another 4 lines
+(8 points), Bob has 14 attack points coming from you. Keeping the 
+same example, lets suppose a 3rd player called John is also in the 
+game and he sends 5 lines. Then the current attack points will be:
+
+You: 10 points from John
+	0 points from Bob
+
+Bob: 14 points from you
+     10 points from John
+
+John: 14 points from you
+	 0 point from bob
+
+Now lets assume that Bob now dies. You will get a frag because you
+are the one who has accumulated the most attack points against Bob.
+
+Now heres the key point: every time anybody places a block, the
+attack points they received from all their enemies are decreased by
+one. So in the same example, if John manages to place 14 blocks 
+before dying, you will not get a frag (assuming you don't send any 
+more lines in that time). On the other hand, if you manage to place
+9 blocks correctly but you die before placing the 10th one after 
+Johns 5-lines attack, John will get a frag against you.
+
+So the rule is quite simple: every line sent adds 2 attack points to
+everybody receiving the line and every block placed reduces by one 
+the attack points accumulated by the opponents. If you die with all 
+the attack points down to zero, nobody gets the frag. If you die with 
+one or more attack points accumulated against you, the attacker with 
+the most attack points against you will get the frag.
+
+Survivor mode works a little bit differently: the program will never
+"forget" an attack, even if you place a million blocks. That's why 
+you (almost) always get a frag in survivor mode. 
+
+
+ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+|__    __|   __|  |__   |__ __   |     |   __ __|  |     |__|  |__|
+|  |__|__ __|__ __ __|__ __|  |__|__ __|__|__ __ __|__ __|__ __ __|
+|__   |     |  | [5] Options Menu               |  |__|__   |__   |
+|  |__|__ __|  |__Q__U__A__D__R__A__ __F__A__Q__|__ __ __|__ __|  |
+|__ __ __|__ __|__ __ __ __|__ __ __ __|__ __ __ __|__ __ __ __|__|
+
+The options menu contains the following:
+
+Select Display Language:
+	Either English for Frence
+
+CD playing mode:
+	Loop all tracks, no music or auto-change track
+	Auto change is like Loop all tracks but just picks a random
+      track.
+
+Mouse Speed:
+	1 - 255
+
+TCP/IP Port Number:
+	Should leave it as 3456, no real reason to change it. If you 
+	do change it you will only be able to access multiplayer games
+	on the same port number as you selected.
+
+Public Game Server Address:
+	Currently there is only a server (which is the default one)
+
+
+ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+|__    __|   __|  |__   |__ __   |     |   __ __|  |     |__|  |__|
+|  |__|__ __|__ __ __|__ __|  |__|__ __|__|__ __ __|__ __|__ __ __|
+|__   |     |  | [6] Player Setup Menu          |  |__|__   |__   |
+|  |__|__ __|  |__Q__U__A__D__R__A__ __F__A__Q__|__ __ __|__ __|  |
+|__ __ __|__ __|__ __ __ __|__ __ __ __|__ __ __ __|__ __ __ __|__|
+
+Here you can set up the player(s) by changing the following:
+
+Set Up player - Choose the player (1, 2 or 3) that you wish to
+		    change the options for.
+Name	- The name of the player
+Color - The default team color of the player
+Shadow - Toggles a neat little shadow which shows where the current
+	   block your controlling would be if you brought it down from
+	   its current positions.
+Smooth - Toggles the smooth effect. If off the block will fall down
+	   the screen in timed jolts.
+Repeat Speed - This controls how fast your controlls move the blocks.
+		   Basically but it on fast or faster in multiplayer
+		   games where playing fast is necessary.
+Left - Set the key to move the blocks left
+Right - Set the key to move the blocks right
+Rotate Left - Set the key to spin the block left
+Rotate Right - Set the key to spin the block right
+Down - Set the key to force the block down
+
+ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+|__    __|   __|  |__   |__ __   |     |   __ __|  |     |__|  |__|
+|  |__|__ __|__ __ __|__ __|  |__|__ __|__|__ __ __|__ __|__ __ __|
+|__   |     |  | [7] Demo Central               |  |__|__   |__   |
+|  |__|__ __|  |__Q__U__A__D__R__A__ __F__A__Q__|__ __ __|__ __|  |
+|__ __ __|__ __|__ __ __ __|__ __ __ __|__ __ __ __|__ __ __ __|__|
+
+
+Here you can replay recorded demos. Demo or recordings as they are
+also known, have the .rec exstension and a very small files
+considering all the information they contain. The 'Quadra Players'
+web site (http://www.quadraplayer.cjb.net) is always wanting your
+.rec files so get there and send them in. You can also download .rec
+file from that site as well.
+
+To replay a .rec file just select it in the left pain of the Demo
+Central screen. Depending on what version it was recorded with the
+information should come up in the left section. Now click start
+play back and sit back and watch.
+
+If your watching a multiplayer game be sure, once the replaying
+starts, open up the watch players window or nothing will seem to
+happen.
+
+Also note that for multiplayer games pauses are recorded so at the
+start of the recording there is usually no action for a period of
+time, especially for internet games.
+
+
+ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+|__    __|   __|  |__   |__ __   |     |   __ __|  |     |__|  |__|
+|  |__|__ __|__ __ __|__ __|  |__|__ __|__|__ __ __|__ __|__ __ __|
+|__   |     |  | [8] High Scores                |  |__|__   |__   |
+|  |__|__ __|  |__Q__U__A__D__R__A__ __F__A__Q__|__ __ __|__ __|  |
+|__ __ __|__ __|__ __ __ __|__ __ __ __|__ __ __ __|__ __ __ __|__|
+
+This displays the top 6 local high scores and the top six world
+wide high scores. If you connect to the internet you can click the
+update button to send your top score to the world wide top 100. This
+button will also download the top 6 world wide highscores.
+
+Only your best game will be updated to the world wide top 100.
+
+The world wide top 100 is avaible for everyone to look at and is 
+located on the internet at:
+http://www.ludusdesign.com/
+
+On the high scores screen you can click the any of the playback
+buttons to play back the corresponding game.
+
+ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+|__    __|   __|  |__   |__ __   |     |   __ __|  |     |__|  |__|
+|  |__|__ __|__ __ __|__ __|  |__|__ __|__|__ __ __|__ __|__ __ __|
+|__   |     |  | [9] QUADRA PLAYING TIPS!!!     |  |__|__   |__   |
+|  |__|__ __|  |__Q__U__A__D__R__A__ __F__A__Q__|__ __ __|__ __|  |
+|__ __ __|__ __|__ __ __ __|__ __ __ __|__ __ __ __|__ __ __ __|__|
+
+The following tips were sent in by the Quadra Master himself - Mutt.
+He currently holds the highest ever score of 545897!!!
+
+5. Practice on High speeds. You can do this by creating a multiplayer
+game and makeing the game start at a higher level.
+
+4. Build up! Build up for 9 liners, once you get better build up for 
+13 liners!! 
+
+3. Think and look ahead. Use the gravity feature when ever you can.
+Remember that clearing 2 cascading lines using gravity is werth more
+than clearing a 2 lines that doesn't casscade. 
+
+2. Learn to build up on the high speeds. It is very scary to do, but
+ it gives you a whole heap of points. Learn to get 5+ liners on 
+levels 10 and above. 
+
+1. (The most important) USE BOTH ROTATE BUTTONS!!!!! There is no way
+that on level 14 you will be able to hit the rotate button 3 times.
+It is necessary that you us both. I recommend the 3 bottom arrow 
+keys for guidance and "d" and "s" for rotate buttons. 
+
+
+(These tips were sent in by Mutt and were slighly edited)
+ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+|__    __|   __|  |__   |__ __   |     |   __ __|  |     |__|  |__|
+|  |__|__ __|__ __ __|__ __|  |__|__ __|__|__ __ __|__ __|__ __ __|
+|__   |     |  | [10] Closing FAQ Info          |  |__|__   |__   |
+|  |__|__ __|  |__Q__U__A__D__R__A__ __F__A__Q__|__ __ __|__ __|  |
+|__ __ __|__ __|__ __ __ __|__ __ __ __|__ __ __ __|__ __ __ __|__|
+
+[10-1] Document History/Updates
+
+Version 1.0.1 - First Public Release - 11 October 1999.	
+	Covers Quadra version 1.1.1
+	Added the tips section
+	Changed some other sections
+	Fixed some spelling and line format errors
+
+Version 1.0 - First Release - 10 October 1999.
+	Covers Quadra version 1.1.1
+
+
+[10-2] Credits
+	
+	The author of the FAQ/Guide is me DAC (aka ComDAC). My email
+	address is comdac@hotmail.com. Please feel free to send any
+	questions or suggestions to me.
+
+	A would like to thank Ludus Design for making such a kick arse
+	game!
+	Credits for Quadra
+		Design	Remz Dada 	
+		Programming	Remz Dada Seventh 	
+		Graphics	Vro Remz 	
+		Testing	Doh 
+				Frugus Eggbeater
+				Thak 
+				DD 
+				Gou 
+				Le Tigre
+				Jeps
+				Brain
+				Dilu
+				Xen
+				Vero
+				Scalp The Lonas' Staggers (and Collin)
+				The Ludus Team 	
+
+	Extra special thanks to Dada for helping me out with such
+	information as what exactally a frag is and how the points
+	are worked out.
+	
+	Also thanks to Mutt for sending in his Quadra Tips which can
+	be found in section 9.
+
+	Last of all, Thanks for reading this FAQ. I would like to hear
+	from you so send me email at comdac@hotmail.com
+
+
+</pre>
+<script language=Javascript>
+<!--
+if (document.layers) {
+document.write("<LAYER src='http://" + h + "/adl/" + d + ".webgenesis/frontpage;sz=468x60;ord=" + r + "'  visibility='show' onload='moveToAbsolute(ph1.pageX, ph1.pageY)'; visibility='show';' width=468 height=80></LAYER>");
+}
+//-->
+</script></body>
+</html>
