@@ -7,4 +7,5 @@ Exec=quadra
 Terminal=false
 Type=Application
 Icon=quadra.xpm
+Categories=Game;BoardGame;
 # vi: encoding=utf-8
