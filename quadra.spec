@@ -3,19 +3,19 @@ Summary(pl):	Gra logiczna dla wielu graczy
 Name:		quadra
 Version:	1.1.7
 Release:	1
+License:	GPL
 Group:		X11/Applications/Games
 Group(de):	X11/Applikationen/Spiele
 Group(pl):	X11/Aplikacje/Gry
-Source0:	http://download.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://download.sourceforge.net/quadra/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-FHS.patch
 Icon:		quadra.xpm
 URL:		http://quadra.Sourceforge.net/
-License:	GPL
-BuildRequires:	zlib-devel
-BuildRequires:	libpng-devel
 BuildRequires:	XFree86-devel
+BuildRequires:	libpng-devel
 BuildRequires:	svgalib-devel
+BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
