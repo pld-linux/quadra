@@ -6,3 +6,4 @@ Exec=quadra
 Terminal=0
 Type=Application
 Icon=quadra.xpm
+# vi: encoding=utf-8
