@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	svga	# without svgalib version
+#
 Summary:	Multiplayer puzzle game
 Summary(pl):	Gra logiczna dla wielu graczy
 Name:		quadra
@@ -16,9 +20,7 @@ Requires:	/bin/awk
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	libpng-devel
-%ifarch %{ix86} alpha
-BuildRequires:	svgalib-devel
-%endif
+%{?with_svga:BuildRequires:	svgalib-devel}
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,7 +47,7 @@ Quadra to gra logiczna dla wielu graczy, wzorowana na Tetris.
 Summary:	Svgalib driver for Quadra
 Summary(pl):	Driver svgalib dla gry quadra
 Group:		Applications/Games
-Requires:	quadra = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description svga
 Svgalib driver for Quadra
@@ -61,9 +63,8 @@ Driver svgalib dla gry quadra
 rm -f missing
 %{__autoconf}
 %configure \
-%ifnarch %{ix86} alpha
-	--without-svgalib
-%endif
+	%{!?with_svga:--without-svgalib}
+
 %{__make}
 
 /bin/awk 'BEGIN { RS="<pre>" ; getline ; RS="</pre>" ; getline ; print $0 }' %{SOURCE2} > quadra.txt
@@ -87,7 +88,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_pixmapsdir}/*
 %{_applnkdir}/Games/*
 
-%ifarch %{ix86} alpha
+%if %{with svga}
 %files svga
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/games/quadra-svga.so
