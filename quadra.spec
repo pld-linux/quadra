@@ -60,7 +60,10 @@ Driver svgalib dla gry quadra
 %build
 rm -f missing
 %{__autoconf}
-%configure
+%configure \
+%ifnarch %{ix86} alpha
+	--without-svgalib
+%endif
 %{__make}
 
 /bin/awk 'BEGIN { RS="<pre>" ; getline ; RS="</pre>" ; getline ; print $0 }' %{SOURCE2} > quadra.txt
@@ -87,5 +90,5 @@ rm -rf $RPM_BUILD_ROOT
 %ifarch %{ix86} alpha
 %files svga
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/quadra-svga.so
+%attr(755,root,root) %{_libdir}/games/quadra-svga.so
 %endif
