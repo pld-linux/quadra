@@ -5,7 +5,7 @@ Version:	1.1.8
 Release:	2
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://download.sourceforge.net/quadra/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	4934ee30d0bd98c4c454829a03224f6f
 Source1:	%{name}.desktop
 Source2:	http://www.gamesdomain.com/faqdir/%{name}.txt
