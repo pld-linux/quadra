@@ -5,8 +5,6 @@ Version:	1.1.7
 Release:	2
 License:	GPL
 Group:		X11/Applications/Games
-Group(de):	X11/Applikationen/Spiele
-Group(pl):	X11/Aplikacje/Gry
 Source0:	http://download.sourceforge.net/quadra/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	http://www.gamesdomain.com/faqdir/%{name}.txt
@@ -44,8 +42,6 @@ Quadra to gra logiczna dla wielu graczy, wzorowana na Tetris.
 Summary:	Svgalib driver for Quadra
 Summary(pl):	Driver svgalib dla gry quadra
 Group:		Applications/Games
-Group(de):	Applikationen/Spiele
-Group(pl):	Aplikacje/Gry
 Requires:	quadra = %{version}
 
 %description svga
