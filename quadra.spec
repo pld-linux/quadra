@@ -47,7 +47,7 @@ Requires:	quadra = %{version}
 %description svga
 Svgalib driver for Quadra
 
-%description -l pl svga
+%description svga -l pl
 Driver svgalib dla gry quadra
 
 %prep
