@@ -2,7 +2,7 @@ Summary:	Multiplayer puzzle game
 Summary(pl):	Gra logiczna dla wielu graczy
 Name:		quadra
 Version:	1.1.8
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://download.sourceforge.net/quadra/%{name}-%{version}.tar.gz
