@@ -59,7 +59,7 @@ Driver svgalib dla gry quadra
 %patch0 -p1
 
 %build
-%configure
+%configure2_13
 %{__make}
 /bin/awk 'BEGIN { RS="<pre>" ; getline ; RS="</pre>" ; getline ; print $0 }' %{SOURCE2} > quadra.txt
 
