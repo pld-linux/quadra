@@ -1,0 +1,50 @@
+diff -durN quadra-1.1.7.orig/config/rules.mk quadra-1.1.7/config/rules.mk
+--- quadra-1.1.7.orig/config/rules.mk	Mon Dec  4 23:02:35 2000
++++ quadra-1.1.7/config/rules.mk	Mon Apr  2 19:03:13 2001
+@@ -35,15 +35,15 @@
+ dist: distclean quadra.spec configure manual-dist-stuff
+ 
+ installdirs:
+-	mkdir $(prefix)
+-	mkdir $(prefix)/games
+-	mkdir $(prefix)/lib
+-	mkdir $(prefix)/lib/games
++	mkdir -p $(DESTDIR)$(prefix)
++	mkdir -p $(DESTDIR)$(prefix)/bin
++	mkdir -p $(DESTDIR)$(prefix)/lib
++	mkdir -p $(DESTDIR)$(prefix)/share/misc
+ 
+ install: installdirs $(TARGETS)
+-	$(INSTALL_PROGRAM) quadra $(prefix)/games/quadra
+-	$(INSTALL_PROGRAM) quadra-svga.so $(prefix)/lib/games/quadra-svga.so
+-	$(INSTALL_DATA) quadra.res $(prefix)/lib/games/quadra.res
++	$(INSTALL_PROGRAM) quadra -p $(DESTDIR)$(prefix)/bin/quadra
++	$(INSTALL_PROGRAM) quadra-svga.so -p $(DESTDIR)$(prefix)/lib/quadra-svga.so
++	$(INSTALL_DATA) quadra.res -p $(DESTDIR)$(prefix)/share/misc/quadra.res
+ 
+ quadra.spec: packages/quadra.spec.in source/config.cpp
+ 	sed $< -e 's/@VERSION@/$(VERSION)/g' > $@
+diff -durN quadra-1.1.7.orig/skelton/svgalib/wraplib.cpp quadra-1.1.7/skelton/svgalib/wraplib.cpp
+--- quadra-1.1.7.orig/skelton/svgalib/wraplib.cpp	Thu Nov 30 21:48:53 2000
++++ quadra-1.1.7/skelton/svgalib/wraplib.cpp	Mon Apr  2 19:03:00 2001
+@@ -42,7 +42,7 @@
+ 
+     dir = getenv("QUADRADIR");
+     if(!dir)
+-      dir = "/usr/lib/games";
++      dir = "/usr/lib";
+ 
+     snprintf(fn, sizeof(fn) - 1, "%s/quadra-svga.so", dir);
+ 
+diff -durN quadra-1.1.7.orig/source/quadra.cpp quadra-1.1.7/source/quadra.cpp
+--- quadra-1.1.7.orig/source/quadra.cpp	Thu Nov 30 21:48:54 2000
++++ quadra-1.1.7/source/quadra.cpp	Mon Apr  2 19:03:00 2001
+@@ -2114,7 +2114,7 @@
+ #ifdef UGS_LINUX
+ 	dir = getenv("QUADRADIR");
+ 	if(!dir)
+-		dir="/usr/lib/games";
++		dir="/usr/X11R6/share/misc";
+ #endif
+ 	resmanager=new Resmanager();
+ 	snprintf(fn, sizeof(fn) - 1, "%s/quadra.res", dir);
