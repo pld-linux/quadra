@@ -2,16 +2,18 @@ Summary:	Multiplayer puzzle game
 Summary(pl):	Gra logiczna dla wielu graczy
 Name:		quadra
 Version:	1.1.7
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Group(de):	X11/Applikationen/Spiele
 Group(pl):	X11/Aplikacje/Gry
 Source0:	http://download.sourceforge.net/quadra/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
+Source2:	http://www.gamesdomain.com/faqdir/%{name}.txt
 Patch0:		%{name}-FHS.patch
 Icon:		quadra.xpm
 URL:		http://quadra.Sourceforge.net/
+Requires:	/bin/awk
 BuildRequires:	XFree86-devel
 BuildRequires:	libpng-devel
 BuildRequires:	svgalib-devel
@@ -59,6 +61,7 @@ Driver svgalib dla gry quadra
 %build
 %configure
 %{__make}
+/bin/awk 'BEGIN { RS="<pre>" ; getline ; RS="</pre>" ; getline ; print $0 }' %{SOURCE2} > quadra.txt
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -68,7 +71,7 @@ install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Games}
 install images/quadra.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
 
-gzip -9nf NEWS README 
+gzip -9nf NEWS README quadra.txt
 
 %clean
 rm -rf $RPM_BUILD_ROOT
