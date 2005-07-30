@@ -24,7 +24,6 @@ BuildRequires:	libpng-devel
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 Quadra is a full-featured multiplayer action puzzle game for the X
 Window System and Svgalib. Features include:
