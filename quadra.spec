@@ -14,7 +14,6 @@ Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	http://www.gamesdomain.com/faqdir/%{name}.txt
 Patch0:		%{name}-DESTDIR.patch
-Icon:		quadra.xpm
 URL:		http://quadra.Sourceforge.net/
 Requires:	/bin/awk
 BuildRequires:	XFree86-devel
