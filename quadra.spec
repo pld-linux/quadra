@@ -3,7 +3,7 @@
 %bcond_without	svga	# without svgalib version
 #
 Summary:	Multiplayer puzzle game
-Summary(pl):	Gra logiczna dla wielu graczy
+Summary(pl.UTF-8):   Gra logiczna dla wielu graczy
 Name:		quadra
 Version:	1.1.8
 Release:	3
@@ -38,30 +38,30 @@ Window System and Svgalib. Features include:
  - CD-based music
  - And much more!
 
-%description -l pl
+%description -l pl.UTF-8
 Quadra to gra logiczna dla wielu graczy dla systemu X Window i
-svgaliba. Jej cechy obejmuj±:
- - rekurencyjne ³±czenie bloków
- - cieniowanie bloków
- - grê dru¿ynow±
- - sieæ TCP/IP (darmowa gra przez Internet!)
- - p³ynne spadanie bloków
- - efekty d¼wiêkowe
+svgaliba. Jej cechy obejmujÄ…:
+ - rekurencyjne Å‚Ä…czenie blokÃ³w
+ - cieniowanie blokÃ³w
+ - grÄ™ druÅ¼ynowÄ…
+ - sieÄ‡ TCP/IP (darmowa gra przez Internet!)
+ - pÅ‚ynne spadanie blokÃ³w
+ - efekty dÅºwiÄ™kowe
  - widoki na innych graczy
  - okno pogadanek
- - muzykê opart± na CD
- - wiele wiêcej.
+ - muzykÄ™ opartÄ… na CD
+ - wiele wiÄ™cej.
 
 %package svga
 Summary:	Svgalib driver for Quadra
-Summary(pl):	Sterownik svgalib dla gry Quadra
+Summary(pl.UTF-8):   Sterownik svgalib dla gry Quadra
 Group:		Applications/Games
 Requires:	%{name} = %{version}-%{release}
 
 %description svga
 Svgalib driver for Quadra
 
-%description svga -l pl
+%description svga -l pl.UTF-8
 Sterownik svgalib dla gry Quadra.
 
 %prep
