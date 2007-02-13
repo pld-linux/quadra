@@ -3,7 +3,7 @@
 %bcond_without	svga	# without svgalib version
 #
 Summary:	Multiplayer puzzle game
-Summary(pl.UTF-8):   Gra logiczna dla wielu graczy
+Summary(pl.UTF-8):	Gra logiczna dla wielu graczy
 Name:		quadra
 Version:	1.1.8
 Release:	3
@@ -54,7 +54,7 @@ svgaliba. Jej cechy obejmują:
 
 %package svga
 Summary:	Svgalib driver for Quadra
-Summary(pl.UTF-8):   Sterownik svgalib dla gry Quadra
+Summary(pl.UTF-8):	Sterownik svgalib dla gry Quadra
 Group:		Applications/Games
 Requires:	%{name} = %{version}-%{release}
 
