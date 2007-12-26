@@ -1,11 +1,10 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Quadra
 Comment=Multiplayer puzzle game
 Comment[pl]=Gra logiczna dla wielu graczy
 Exec=quadra
 Terminal=false
 Type=Application
-Icon=quadra.xpm
+Icon=quadra
 Categories=Game;BoardGame;
 # vi: encoding=utf-8
