@@ -1,21 +1,21 @@
-#
+# TODO
+# - fix format-security"
+
 # Conditional build:
-%bcond_without	svga	# without svgalib version
-#
-Summary:	Multiplayer puzzle game
+%bcond_with	svga	# without svgalib version
+
+Summary:	Multiplayer Action Puzzle Game
 Summary(pl.UTF-8):	Gra logiczna dla wielu graczy
 Name:		quadra
-Version:	1.1.8
-Release:	3
-License:	GPL
+Version:	1.2.0
+Release:	0.1
+License:	LGPL v2.1
 Group:		X11/Applications/Games
-Source0:	http://dl.sourceforge.net/quadra/%{name}-%{version}.tar.gz
-# Source0-md5:	4934ee30d0bd98c4c454829a03224f6f
+Source0:	http://quadra.googlecode.com/files/%{name}-%{version}.tar.gz
+# Source0-md5:	df179970c4eb75af9ccdc5527d901fa6
 Source1:	%{name}.desktop
 Source2:	http://www.gamesdomain.com/faqdir/%{name}.txt
-Patch0:		%{name}-DESTDIR.patch
-URL:		http://quadra.sourceforge.net/
-BuildRequires:	XFree86-devel
+URL:		http://code.google.com/p/quadra/
 BuildRequires:	autoconf
 BuildRequires:	libpng-devel
 %{?with_svga:BuildRequires:	svgalib-devel}
@@ -66,9 +66,9 @@ Sterownik svgalib dla gry Quadra.
 
 %prep
 %setup -q
-%patch0
 
 %build
+CPPFLAGS="%{rpmcflags} -Wno-error=format-security"
 %{__autoconf}
 %configure \
 	%{!?with_svga:--without-svgalib}
@@ -80,23 +80,22 @@ Sterownik svgalib dla gry Quadra.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install images/quadra.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
-install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+cp -p images/quadra.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
+cp -p %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc NEWS README quadra.txt
-%attr(755,root,root) %{_bindir}/*
+%doc NEWS README ChangeLog quadra.txt
+%attr(755,root,root) %{_bindir}/quadra
 %{_datadir}/games/quadra.res
-%{_pixmapsdir}/*
-%{_desktopdir}/*.desktop
+%{_pixmapsdir}/quadra.xpm
+%{_desktopdir}/quadra.desktop
 
 %if %{with svga}
 %files svga
