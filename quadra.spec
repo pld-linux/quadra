@@ -8,12 +8,12 @@ Summary:	Multiplayer Action Puzzle Game
 Summary(pl.UTF-8):	Gra logiczna dla wielu graczy
 Name:		quadra
 Version:	1.2.0
-Release:	0.1
+Release:	0.2
 License:	LGPL v2.1
 Group:		X11/Applications/Games
 Source0:	http://quadra.googlecode.com/files/%{name}-%{version}.tar.gz
 # Source0-md5:	df179970c4eb75af9ccdc5527d901fa6
-Source1:	%{name}.desktop
+Patch0:		%{name}-desktop.patch
 Source2:	http://www.gamesdomain.com/faqdir/%{name}.txt
 URL:		http://code.google.com/p/quadra/
 BuildRequires:	autoconf
@@ -84,7 +84,7 @@ install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 	DESTDIR=$RPM_BUILD_ROOT
 
 cp -p images/quadra.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
-cp -p %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+cp -p Quadra.desktop $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT

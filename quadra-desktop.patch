@@ -1,0 +1,16 @@
+--- quadra/../BUILD.x86_64-linux/quadra-1.2.0/Quadra.desktop~	2013-03-05 11:26:04.000000000 +0200
++++ quadra/../BUILD.x86_64-linux/quadra-1.2.0/Quadra.desktop	2013-03-05 11:33:15.791813888 +0200
+@@ -1,7 +1,9 @@
+ [Desktop Entry]
+ Name=Quadra
+-Comment=Quadra
+-Exec=/usr/bin/quadra
+-Icon=/usr/share/pixmaps/quadra.xpm
+-Terminal=0
++Comment=Multiplayer puzzle game
++Comment[pl]=Gra logiczna dla wielu graczy
++Exec=quadra
++Icon=quadra
++Terminal=false
+ Type=Application
++Categories=Game;BoardGame;
